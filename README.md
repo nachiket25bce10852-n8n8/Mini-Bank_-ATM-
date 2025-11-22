@@ -1,19 +1,46 @@
-# Simple ATM System (Python)
+Project: Mini Bank ATM System
 
-This is a basic Python project that simulates a simple ATM system.  
-The program allows a user to log in and perform basic banking operations such as checking balance, depositing money, withdrawing money, and viewing transaction history.
+A simple, beginner-friendly Python project that simulates basic ATM (Automated Teller Machine) operations.
+This project uses multiple Python files, simple functions, and in-memory dictionary storage, making it easy to understand and perfect for college mini-project submission.
 
----
+Features : 
 
-## 📝 Features
+Create New Account
+Users can create an account with account number, name, and PIN.
+Secure Login
+Login using account number + 4-digit PIN.
+Check Balance
+Displays the current account balance. Deposit Money
+Add money to the account and record the transaction.
+Withdraw Money
+withdraw money if sufficient balance is available.Mini Statement
+Shows the list of recent transactions.
+Change PIN
+Users can update their existing PIN.
+Logout
+Return to the main menu.
+No external database or file storage is used.
+Everything is stored temporarily in a Python dictionary while the program is running.
 
-- User login using account number and PIN  
-- Check balance  
-- Deposit amount  
-- Withdraw amount  
-- View simple transaction history  
-- Data stored inside a JSON file  
-- Easy-to-understand Python code split into modules
+How It Works :
 
----
+1. User starts the program with main.py
+2. Main menu appears:
+Create Account
+Login
+Exit
+3. After login, the ATM menu appears:
+Check Balance
+Deposit
+Withdraw
+Mini Statement
+Change PIN
+Logout
+4. All banking operations update the in-memory accounts dictionary.
 
+Technologies Used :
+Python 3
+Basic functions
+Dictionaries
+Modular programming
+No external libraries required.
