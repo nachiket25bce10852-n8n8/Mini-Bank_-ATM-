@@ -38,6 +38,32 @@ Change PIN
 Logout
 4. All banking operations update the in-memory accounts dictionary.
 
+Modules Overview :
+
+main.py :
+
+Displays the welcome screen
+Controls the main flow
+Calls login or account creation
+Sends the logged-in user to ATM menu
+
+bank.py :
+
+Handles account creation
+Handles login authentication
+
+account.py :
+
+Stores all accounts in a dictionary
+Contains balance and PIN functions
+transaction.py
+Handles deposit, withdrawal, and history tracking
+
+atm_menu.py :
+
+Displays options after login
+Calls functions from other modules
+
 Technologies Used :
 Python 3
 Basic functions
