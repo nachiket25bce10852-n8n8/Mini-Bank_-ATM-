@@ -2,15 +2,15 @@
 from account import accounts
 
 def create_account():
-    print("\n--- Create New Account ---")
-    acc_no = input("Enter new account number: ")
+    print(" create new account ")
+    acc_no = input("enter new account number: ") #generating new account credentials for the new user or holder
 
     if acc_no in accounts:
-        print("Account already exists!")
+        print("account already exists!")  #analysed on the restored data
         return
 
-    name = input("Enter your name: ")
-    pin = input("Set a 4-digit PIN: ")
+    name = input("enter your name: ")
+    pin = input("set a 4-digit PIN: ")
 
     accounts[acc_no] = {
         "name": name,
@@ -19,17 +19,17 @@ def create_account():
         "history": []
     }
 
-    print("Account created successfully!")
+    print("account created successfully!")   #new account added to the history
 
 
 def login():
-    print("\n--- Login ---")
-    acc_no = input("Enter account number: ")
-    pin = input("Enter PIN: ")
+    print("login")
+    acc_no = input("enter account number: ")
+    pin = input("enter your PIN: ")
 
     if acc_no in accounts and accounts[acc_no]["pin"] == pin:
-        print(f"Welcome, {accounts[acc_no]['name']}!")
+        print(f"welcome, {accounts[acc_no]['name']}")
         return acc_no
     else:
-        print("Invalid account number or PIN.")
+        print("invalid account number or PIN.")     #analysed on the restored data
         return None
